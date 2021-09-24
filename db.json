@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "tickets": [
+    {
+      "id": 1,
+      "tracking_id": "00001",
+      "description": "first",
+      "urgent": false,
+      "timestamp": {
+        "begin": "9:10",
+        "PR_issue": "10:30",
+        "PR_approve": "11:00",
+        "PO_issue": "12:00"
+      }
+    },
+    {
+      "id": 2,
+      "tracking_id": "00002",
+      "description": "second",
+      "urgent": true,
+      "timestamp": {
+        "begin": "9:10",
+        "PR_issue": "10:30",
+        "PR_approve": "11:00",
+        "PO_issue": "12:00"
+      }
+    },
+    {
+      "id": 3,
+      "tracking_id": "00003",
+      "description": "third",
+      "urgent": false,
+      "timestamp": {
+        "begin": "9:10",
+        "PR_issue": "10:30",
+        "PR_approve": "11:00",
+        "PO_issue": "12:00"
+      }
+    }
+  ]
+}
