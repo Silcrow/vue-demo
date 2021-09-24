@@ -24,4 +24,3 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Explanations
-- pages: ongoing, completed, homepage, login.

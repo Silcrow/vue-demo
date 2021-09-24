@@ -2,15 +2,9 @@
 
 <v-app>
   <v-navigation-drawer app>
-    <!-- -->
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/ongoing">Ongoing</router-link>
-    <router-link to="/completed">Completed</router-link>
   </v-navigation-drawer>
 
   <v-app-bar app>
-    <!-- -->
   </v-app-bar>
 
   <!-- Sizes your content based upon application components -->
@@ -25,7 +19,11 @@
   </v-main>
 
   <v-footer app>
-    <p style="color:tomato">footer</p>
+    {{ new Date().getFullYear() }} — <strong>Silcrow</strong>
+    <router-link to="/">Home</router-link>
+    <router-link to="/about">About</router-link>
+    <router-link to="/ongoing">Ongoing</router-link>
+    <router-link to="/completed">Completed</router-link>
   </v-footer>
 </v-app>
 
