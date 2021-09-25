@@ -1,13 +1,13 @@
 <template>
     <div class="Timeline">
-        <v-timeline dense>
+        <v-timeline>
             <v-timeline-item small color="green">{{begin}} Begin </v-timeline-item>
             <p style="color:tomato">[time elapse]</p>
             <v-timeline-item small color="green">{{PR_issue}} PR Issue </v-timeline-item>
             <p style="color:tomato">[total time used]</p>
-            <v-timeline-item small color="green">{{PR_approve}} PR Approve </v-timeline-item>
+            <v-timeline-item small color="grey">{{PR_approve}} PR Approve </v-timeline-item>
             <p style="color:tomato">[total time used]</p>
-            <v-timeline-item small color="green">{{PO_issue}} PO Issue </v-timeline-item>
+            <v-timeline-item small color="grey">{{PO_issue}} PO Issue </v-timeline-item>
             <p style="color:tomato">[total time used]</p>
         </v-timeline>
     </div>

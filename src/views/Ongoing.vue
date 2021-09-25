@@ -5,24 +5,20 @@
         <ul>
             ID | Description | Urgent
             <li v-for="ticket of tickets" :key="ticket.id">
-                <ShowTicket :tracking_id=ticket.tracking_id
-                            :description=ticket.description
-                            :urgent=ticket.urgent
-                />
+                {{ticket.tracking_id}}
+            </li>
+        </ul>
                 <Timeline :begin=ticket.timestamp.begin
                             :PR_issue=ticket.timestamp.PR_issue
                             :PR_approve=ticket.timestamp.PR_approve
                             :PO_issue=ticket.timestamp.PO_issue
                 />
-            </li>
-        </ul>
+                <!-- TODO: wrap timeline in scrollable table with pagination -->
     </div>
-    <!-- TODO: wrap timeline in scrolling and pagination -->
 </template>
 
 <script>
 import axios from 'axios';
-import ShowTicket from '../components/ShowTicket.vue';
 import Timeline from '../components/Timeline.vue';
 
 export default {
@@ -33,7 +29,6 @@ export default {
         }
     },
     components: {
-        ShowTicket,
         Timeline
     },
     async created() {

@@ -27,7 +27,9 @@
         "PR_issue": "10:30",
         "PR_approve": "11:00",
         "PO_issue": "12:00"
-      }
+      },
+      "late": true,
+      "complete": true
     },
     {
       "id": 2,
@@ -39,7 +41,9 @@
         "PR_issue": "10:30",
         "PR_approve": "11:00",
         "PO_issue": "12:00"
-      }
+      },
+      "late": false,
+      "complete": true
     },
     {
       "id": 3,
@@ -51,7 +55,23 @@
         "PR_issue": "10:30",
         "PR_approve": "11:00",
         "PO_issue": "12:00"
-      }
+      },
+      "late": false,
+      "complete": false
+    },
+    {
+      "id": 4,
+      "tracking_id": "00004",
+      "description": "fourth",
+      "urgent": false,
+      "timestamp": {
+        "begin": "9:01",
+        "PR_issue": "11:30",
+        "PR_approve": "13:00",
+        "PO_issue": "14:00"
+      },
+      "complete": true,
+      "late": true
     }
   ]
 }
